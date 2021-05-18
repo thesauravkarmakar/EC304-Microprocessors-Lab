@@ -1,0 +1,11 @@
+// ADD TWO 16 BIT NUMBERS (ADC INSTRUCTION)
+# ORG 0000H
+	   LXI D,22A3
+	   LXI H,1060
+	   MOV A,E
+	   ADD L
+	   STA 3050
+	   MOV A,D
+	   ADC H
+	   STA 3051
+	   RST 1
