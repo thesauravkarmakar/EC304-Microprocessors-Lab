@@ -1,0 +1,10 @@
+// ADD TWO 16 BIT NUMBERs
+# ORG 2000H
+	   LXI B,257D
+	   LXI H,32A1
+	   DAD B
+	   MOV A,H
+	   STA 3505
+	   MOV A,L
+	   STA 3506
+	   RST 1
